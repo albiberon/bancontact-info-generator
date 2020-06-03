@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <div class="bancontact-container">
+        <img class="bancontact-logo"
+        src="./img/bancontact-logo.jpg">
+        <p class="bancontact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum erat et
+            feugiat imperdiet. Praesent venenatis ipsum mauris, nec ultrices sem tempus vel. </p>
+    </div>
+    <style>
+        .bancontact-container {
+            display: block;
+            width: 100%;
+        }
+
+        .bancontact-logo {
+            display: inline-block;
+            width: 15%;
+            border: 0.5px solid#333;
+            border-radius: 2px;
+        }
+
+        .bancontact-text {
+            display: inline-block;
+            width: 84%;
+        }
+    </style>
+
+</body>
+
+</html>
+
+
+<script>
+
+jQuery(function($){
+
+let bancontactContent = `
+<div class="bancontact-container alert alert-warning" role="alert">
+        <img class="bancontact-logo"
+            src="./img/bancontact-logo.jpg">
+        <p class="bancontact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum erat et
+            feugiat imperdiet. Praesent venenatis ipsum mauris, nec ultrices sem tempus vel. </p>
+    </div>
+    <style>
+        .bancontact-container {
+            display: block;
+            width: 100%;
+            background-color: #f5f5de;
+            border-radius: 5px;
+            border-bottom: 0.5px solid #ebebcd;
+            border-right: 0.5px solid #ebebcd;
+        }
+
+        .bancontact-logo {
+            display: inline-block;
+            width: 14%;
+        }
+
+        .bancontact-text {
+            display: inline-block;
+            width: 85%;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+    </style>
+`;
+
+$(bancontactContent).prependTo('.amcheckout-wrapper:nth(2)');
+
+
+
+
+
+});
+
+
+
+</script>
